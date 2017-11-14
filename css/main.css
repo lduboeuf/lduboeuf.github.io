@@ -1,0 +1,184 @@
+body {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+}
+
+body>header {
+    background-image: url(../img/background.jpeg);
+    color: #fff;
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+h2,h3 {
+    margin:0;
+}
+
+.links{
+    list-style-type: none;
+}
+.links li{
+    display: inline-block;
+}
+.links li a{
+    text-decoration: none;
+    color:#fff;
+    padding-left: 12px;
+  }
+
+body>header>h1 {
+    font-size: 3rem;
+}
+
+body>header>h2 {
+    font-size: 2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+section {
+    color: #4A4A4A;
+    padding-top:1em;
+}
+
+.row {
+   /*  display: table; */
+   width: 100%;
+   margin:auto;
+}
+
+article {
+    width: 33%;
+
+    /* display: table-cell; */
+    display:inline-block;
+    vertical-align: top;
+}
+
+article>h2 {
+    text-align: center;
+}
+
+article>* {
+    margin: 1em;
+}
+
+.description {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.competences {
+    border: 1px dashed #7faacf;
+    border-radius: 9px;
+    padding: 1em;
+    background-color: #f6f7f9;
+    color:#000;
+}
+
+
+article h2 {
+    font-size: 1.4em;
+    text-align: center;
+    
+}
+
+article h3 {
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: center;
+    
+}
+
+
+
+@media screen and (max-width: 640px) {
+    article {
+        display: block;
+        width: 100%;
+    }
+}
+
+pre {
+    outline: 1px dashed #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.string {
+    color: green;
+}
+
+.number {
+    color: darkorange;
+}
+
+.boolean {
+    color: blue;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: #a52121;
+}
+
+
+ /* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+vertical-align: middle;
+font-size: 0.8em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "\1F441";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+
+input:checked + .slider {
+background-color: #ccc;
+
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+content: "{}";
+}
