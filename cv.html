@@ -135,6 +135,9 @@
         </ul>
     </header>
     <main class="container">
+        <section id="presentation">
+            <p>En tant que développeur et formateur, j'aime expérimenter, apprendre, résoudre des problèmes. Autodidacte, j'apprécie le travail en équipe.</p>
+        </section>
         <section id="experiences">
 
             <h2>Expériences <!-- Rectangular switch -->
@@ -186,7 +189,7 @@
             </div>
         </section>
     </main>
-
+    <footer>Lionel Duboeuf - Breizh Izel</footer>
     <script>
 
         var $expeSection = document.querySelector("#experiences .row");
@@ -222,7 +225,7 @@
 
         function toggleExpe(){
             $expeSection.innerHTML = null;
-            if ($toggleSwitchBtn.checked){
+            if (!$toggleSwitchBtn.checked){
                 $expeSection.innerHTML = templ(datas.experiences);
             }else{
                 var str = JSON.stringify(datas.experiences, undefined, 4);
@@ -232,7 +235,7 @@
 
         function toggleForm(){
             $formSection.innerHTML = null;
-            if ($toggleSwitchFormBtn.checked){
+            if (!$toggleSwitchFormBtn.checked){
                 $formSection.innerHTML = tmplForm(datas.formations);
             }else{
                 var str = JSON.stringify(datas.formations, undefined, 4);
