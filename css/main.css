@@ -121,6 +121,20 @@ footer{
     color: white;
 }
 
+#competences ul{
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+}
+#competences ul li {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 1em;
+    color: #66220f;
+    
+}
+
+
 #experiences {
     background-color: #f9f7f7;
     color: #000;
@@ -167,12 +181,15 @@ pre {
 
  /* The switch - the box around the slider */
 .switch {
-position: relative;
+position: absolute;
+color:#000;
+top:2px;
+right: 2px;
 display: inline-block;
 width: 60px;
 height: 34px;
 vertical-align: middle;
-font-size: 0.8em;
+font-size: 1.4em;
 }
 
 /* Hide default HTML checkbox */

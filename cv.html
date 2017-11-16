@@ -14,6 +14,12 @@
     <script>
 
         var datas = {
+            "skills":[
+                "Développement ( backend - frontend )",
+                "Formation",
+                "Administration système",
+                "Gestion de projet"
+            ],
             "experiences": [
                 {
                     title: "Formateur",
@@ -143,7 +149,7 @@
             ],
             "formations":[
                 {
-                    "title": "Responsable de projet en Système d'information",
+                    "title": "Responsable de Projet en Système d'information",
                     "place": "AFPA de St Brieuc",
                     "date" : "2007",
                     "description" : "Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
@@ -197,21 +203,27 @@
             <li><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAALRJREFUOI3t0a1uAkEUxfEfnwmsaSUOvaoBQVJLwmP0GXgA+mJ9gGJw4CpaWd1AQHRZBCMImU3Y7tbxN3PvmTlnJne4c6c22ujVGbbBFmlZczOidTBEgkGVl12SYvoXY7tAf8UjvjDBC94wwjM+Mcf61ou+keMJi1BnOIY6xypmjM2wiA88YBb6MbpVApf4wfuF1q8SmF2tUcoE3kTtgY0CPQl7e7Sch/+LQ9CTcG7n/OP/xwnU6htaQM4CjwAAAABJRU5ErkJggg=="/><a href="https://fr.linkedin.com/in/lduboeuf">LinkedIn</a></li>
         </ul>
         <p class="presentation">En tant que développeur et formateur, j'aime expérimenter, créer, apprendre, résoudre des problèmes. Curieux de nature, autodidacte tout en privilégiant le contact, j'aime les défis techniques. </p>
-        
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
     </header>
+    
     <main class="container">
-       
+            <section id="competences">
+                <h2>Compétences</h2>
+                    <ul>
+                    {{~it.skills :skill:idx}}
+                        <li>{{=skill}}</li>
+                    {{~}}
+                    </ul>
+            </section>
         <section id="experiences">
 
-            <h2>Expériences <!-- Rectangular switch -->
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider"></span>
-                </label>
-            </h2>
+            <h2>Expériences</h2>
             <div class="row">
 
-                {{~it :expe:index}}
+                {{~it.experiences :expe:index}}
                 <article>
                     <h2>{{=expe.title}}</h2>
                     <h3>{{=expe.place}} -
@@ -237,15 +249,10 @@
         </section>
         <section id="formations">
                 
-            <h2>Formations <!-- Rectangular switch -->
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </h2>
+            <h2>Formations</h2>
             <div class="row">
 
-                {{~it :expe:index}}
+                {{~it.formations :expe:index}}
                 <article>
                     <h2>{{=expe.title}}</h2>
                     <h3>{{=expe.place}} -
@@ -261,16 +268,12 @@
     </main>
     <footer>Lionel Duboeuf - Breizh Izel - 2017</footer>
     <script>
+        var $content = document.querySelector(".container");
+        var $toggleSwitchBtn = document.querySelector('.switch input');
 
-        var $expeSection = document.querySelector("#experiences .row");
-        var $toggleSwitchBtn = document.querySelector('#experiences .switch input');
-        var $formSection = document.querySelector("#formations .row");
-        var $toggleSwitchFormBtn = document.querySelector('#formations .switch input');
-        var templ = doT.template($expeSection.innerHTML);
-        var tmplForm = doT.template($formSection.innerHTML);
+        var templ = doT.template($content.innerHTML);
 
-        $expeSection.innerHTML = null;
-        $formSection.innerHTML = null;
+        $content.innerHTML = null;
 
 
         function syntaxHighlight(json) {
@@ -293,32 +296,20 @@
         }
 
 
-        function toggleExpe(){
-            $expeSection.innerHTML = null;
+        function toggleSwitch(){
+            $content.innerHTML = null;
             if (!$toggleSwitchBtn.checked){
-                $expeSection.innerHTML = templ(datas.experiences);
+                $content.innerHTML = templ(datas);
             }else{
-                var str = JSON.stringify(datas.experiences, undefined, 4);
-                $expeSection.appendChild(document.createElement('pre')).innerHTML = syntaxHighlight(str);
-            }
-        }
-
-        function toggleForm(){
-            $formSection.innerHTML = null;
-            if (!$toggleSwitchFormBtn.checked){
-                $formSection.innerHTML = tmplForm(datas.formations);
-            }else{
-                var str = JSON.stringify(datas.formations, undefined, 4);
-                $formSection.appendChild(document.createElement('pre')).innerHTML = syntaxHighlight(str);
+                var str = JSON.stringify(datas, undefined, 4);
+                $content.appendChild(document.createElement('pre')).innerHTML = syntaxHighlight(str);
             }
         }
 
 
-        $toggleSwitchBtn.onclick = toggleExpe;
-        $toggleSwitchFormBtn.onclick = toggleForm;
+        $toggleSwitchBtn.onclick = toggleSwitch;
         
-        toggleExpe();
-        toggleForm();
+        toggleSwitch();
         
         
 
