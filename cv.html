@@ -7,19 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curriculum Vitae - Lionel Duboeuf</title>
     <script type="text/javascript" src="js/doT.min.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
     />
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+    
     <script>
 
         var datas = {
-            "skills":[
-                "Développement ( backend - frontend )",
-                "Formation",
-                "Administration système",
-                "Gestion de projet"
-            ],
+            
             "experiences": [
                 {
                     title: "Formateur",
@@ -208,19 +204,33 @@
             <span class="slider"></span>
         </label>
     </header>
-    
+    <div id="competences">
+            <h2>Compétences</h2>
+                <ul>
+                    <li>
+                        <span class="i_code_page"></span>
+                        <h3>Développement</h3>
+                    </li>
+                    <li>
+                        <span class="i_teaching"></span>
+                        <h3>Formation</h3>
+                    </li>
+                    <li>
+                        <span class="i_server"></span>
+                        <h3>Administration système</h3>
+                    </li>
+                    <li>
+                        <span class="i_group"></span>
+                        <h3>Gestion de projet</h3>
+                    </li>
+                </ul>
+            </div>
     <main class="container">
-            <section id="competences">
-                <h2>Compétences</h2>
-                    <ul>
-                    {{~it.skills :skill:idx}}
-                        <li>{{=skill}}</li>
-                    {{~}}
-                    </ul>
-            </section>
+            
         <section id="experiences">
 
-            <h2>Expériences</h2>
+            <h2><span class="i_working_desk"></span>        
+                Expériences</h2>
             <div class="row">
 
                 {{~it.experiences :expe:index}}
@@ -249,7 +259,7 @@
         </section>
         <section id="formations">
                 
-            <h2>Formations</h2>
+            <h2><span class="i_graduate"></span>  Formations</h2>
             <div class="row">
 
                 {{~it.formations :expe:index}}
@@ -266,7 +276,7 @@
             </div>
         </section>
     </main>
-    <footer>Lionel Duboeuf - Breizh Izel - 2017</footer>
+    <footer>Lionel Duboeuf - Breizh Izel - 2017 <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div></footer>
     <script>
         var $content = document.querySelector(".container");
         var $toggleSwitchBtn = document.querySelector('.switch input');
