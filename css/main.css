@@ -18,6 +18,7 @@ h2,h3 {
 
 .links{
     list-style-type: none;
+    padding:0;
 }
 .links li{
     display: inline-block;
@@ -29,11 +30,11 @@ h2,h3 {
   }
 
 body>header>h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 body>header>h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Merriweather", serif;
     font-weight: 400;
 }
@@ -41,6 +42,13 @@ body>header>h2 {
 section {
     color: #4A4A4A;
     padding-top:1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2{
+    margin:2em;
+    text-align: center;
 }
 
 .row {
@@ -59,6 +67,7 @@ article {
 
 article>h2 {
     text-align: center;
+    height: 40px;
 }
 
 article>* {
@@ -70,12 +79,24 @@ article>* {
     font-style: italic;
 }
 
+.description ul {
+    padding: 1em;
+}
+
+.presentation {
+    opacity: 0.4;
+    color: black;
+    background-color: white;
+}
+
+
 .competences {
     border: 1px dashed #7faacf;
     border-radius: 9px;
     padding: 1em;
     background-color: #f6f7f9;
     color:#000;
+    height: 50px;
 }
 
 
@@ -92,6 +113,22 @@ article h3 {
     
 }
 
+
+footer{
+    font-style: italic;
+    text-align: center;
+    background-color: #232324;
+    color: white;
+}
+
+#experiences {
+    background-color: #f9f7f7;
+    color: #000;
+}
+
+#formations{
+    background-color: #d7d9f2;
+}
 
 
 @media screen and (max-width: 640px) {
