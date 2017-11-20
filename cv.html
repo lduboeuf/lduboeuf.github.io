@@ -9,26 +9,26 @@
     <script type="text/javascript" src="js/doT.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
     />
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
-    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
     <script>
 
         var datas = {
-            
+
             "experiences": [
                 {
                     title: "Formateur",
                     place: "AFPA Morlaix",
                     date: "02/2015 -> 01/2018",
-                    tasks:[
-                        "Suivi promotion formation adulte Développeur Logiciel ( web, client-riche, bdd )",
+                    tasks: [
+                        "Suivi formation adulte Développeur Logiciel ( web, client-riche, bdd )",
                         "Conception et suivi d'une formation de 2 mois ( NodeJs, PHP, AngularJs) "
                     ],
                     skills: {
                         "coaching": 30,
-                        "développement - amélioration continue": 30,
-                        "enseignement": 30
+                        "enseignement": 30,
+                        "développement": 30
                     }
                 },
                 {
@@ -55,8 +55,8 @@
                     ],
                     skills: {
                         "coaching": 30,
-                        "développement - amélioration continue": 30,
-                        "enseignement": 30
+                        "enseignement": 30,
+                        "développement": 30
                     }
                 },
                 {
@@ -100,7 +100,7 @@
                     }
                 },
                 {
-                    title: "Développeur - Administrateur réseau",
+                    title: "Développeur - Admin. réseau",
                     place: "Chambre d'Agriculture de l'Aveyron",
                     date: "06/2000 -> 06/2003",
                     tasks: [
@@ -143,45 +143,60 @@
                     }
                 }
             ],
-            "formations":[
+            "formations": [
                 {
                     "title": "Responsable de Projet en Système d'information",
                     "place": "AFPA de St Brieuc",
-                    "date" : "2007",
-                    "description" : "Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
+                    "date": "2007",
+                    "description": "Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
                 },
                 {
                     "title": "DUT Génie des Télécommunications et Réseaux",
                     "place": "IUT de Belfort-Montbéliard",
-                    "date" : "1997",
-                    "description" : "Stage: Administration PABX - Matra Communication"
+                    "date": "1997",
+                    "description": "Stage: Administration PABX - Matra Communication"
                 },
                 {
                     "title": "Bac Professionnel MRBT",
                     "place": "Lycée Saint Benigne - Pontarlier",
-                    "date" : "1995",
-                    "description" : "Stage: Maintenance bureautique, informatique, réseaux informatique"
+                    "date": "1995",
+                    "description": "Stage: Maintenance bureautique, informatique, réseaux informatique"
                 },
                 {
                     "title": "BEP Electronique",
                     "place": "Lycée Saint Joseph - Dijon",
-                    "date" : "1993",
-                    "description" : "Electronique"
+                    "date": "1993",
+                    "description": ""
                 },
                 {
                     "title": "Formation aux Design Pattern",
                     "place": "Orsys - Paris",
-                    "date" : "2009",
-                    "description" : ""
+                    "date": "2009",
+                    "description": ""
                 },
                 {
                     "title": "Formation à la méthode agile - Scrum",
                     "place": "Claude Aubry - Toulouse",
-                    "date" : "2015",
-                    "description" : ""
+                    "date": "2015",
+                    "description": ""
+                }
+            ],
+            "aside": [
+                {
+                    "title": "Enseignant de Yoga",
+                    "place": "Tredion - Morbihan",
+                    "date": "2003 -> 2007",
+                    "description": "Mise en place et suivi d'un cours hebdomadaire"
+
+                },
+                {
+                    "title": "Loisirs",
+                    "place": "",
+                    "date": "",
+                    "description": "Randonnées, Aikido, bricolage, voyages"
+
                 }
             ]
-
 
         }
 
@@ -194,46 +209,60 @@
         <h1>Lionel Duboeuf</h1>
         <h2>Développeur - Formateur</h2>
         <ul class="links">
-            <li><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAyhJREFUOI2NlE1oXFUUx3/nzEzSduYlJgglkabUvJlI0YpO5gU1ULpxHdQYFyJasGuNuKjiQhAU/IJSjbhwIV21JhFxpYibViQzLiwSSSZkY0uRNk3beYmZdOYcF+kkk2lDeheXe8/H7/zvuZcr3GuEYXsg3WMIIw55MXoAXLkiUAKbrtiNcywsVFtTpdWQzg69pG6fGr5HVSdxzptwCUDdD+AybGLPq7BqyPjKfPHsPUUBGuSiiSAXrWWyhXd7evL7dgrcf+RIOpMrvBeEUTUIC6cBvSsoyEUT6TC61pHNRzuB7srpLzyVzg5evwPdfswgF60F2aEhgEwu/yCMJnYkHT2a3IiBYGDw6SCM1jMD0SiAEIbtAV2LLkzE5eIHAOlc4Xc16RPxDw3WRDgE4LAozj7E38F0obIwMwwQZAvvI368klztTwbSPWbY3sze9c/jhgKTLpQeR04135o0T8LVhr1NU5+s+fobHfX0qCKMKEz9e/HiCkDnY8Ndqta5awPdu7vDqANgae63irj+4MaIOuTxxIVNcdXqa6D7dwWq9NaEV5os5819UMXoEfzyVmXp3xXWKI6HjbUg/yjae+f9iLPlWb5fICLXtzYuAOrKFVPv26wq/HLfQOqbsS7eZ9hlFSg5DDccK3Mzv7pzZjeUuX8Tz/9xYcsiwypakiA3+LKhp/dI8sB/VntYxZ6J50tfZQai56TOCyb2rIp2AZixpOo/u3M2LhenG6jOg48/UEu1X0oIr2vFbpxTLF632tur5Zk/QQ4F2Wg8npv5LrNSP46T3BShJCu2/GozDMDaUidFWbqViicFIJ0rvKgmZ1zrx1I1/qqpzoJfc5FOETnYnKxu/TfLpcXGPj0QHdO6/eTCWFwuTSnAxhfkXzuJH28nedQs+YQjE4J829o7t6Q2w3D73lW/jMulKdj+H2oQFk6BnED4qE2TH1e9+pCQ+LsZKHXNJvz21VoicRK3t1zki7hcHAesFQhAZiAaFbfPDDoEWRDkye0KKTr2iKgu4/ZmQ9lmwVYgAIcPt3XU06NujJj7oKK9ABvvTEsC07dS8SSzs+utqf8D8eZDjhGvbocAAAAASUVORK5CYII="/><a href="https://github.com/lduboeuf">GitHub</a></li>
-            <li><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAQpJREFUOI3l07FKA0EUheEvWcFaMb1VsNBKUIiNpZ29vb6EhW9glU5SiWgt2Aq2ItjY2FgoBlTUQgImEGOxq4zL7mbXTjxwYYZ75p8zDJd/p6iifwKrWEIfL0GvjlFo3kCtANbEdXJohA+0sYX95LIf6iWNyQxYDVcBLKw3bGMhfaCfGC6xnAIu5sC+ai/rdScp0yk2MYe1AthNxotEWEd3TJKsusgCwjOGvwAehpB6sG6n9mV1lteIsItBhXTvaOQlHOIRdxXSdfBUZJjFfcl0XUyVuXUGO0nSPFgPrTKwmnhOjwpgD1gZB2riAK8FoIF4Iho5jO9EoVriqZjHtPgXb3GOY/Gn/XF9Aj7kgfGqD5bgAAAAAElFTkSuQmCC"/><a href="https://twitter.com/LDuboeuf">Twitter</a></li>
-            <li><img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAALRJREFUOI3t0a1uAkEUxfEfnwmsaSUOvaoBQVJLwmP0GXgA+mJ9gGJw4CpaWd1AQHRZBCMImU3Y7tbxN3PvmTlnJne4c6c22ujVGbbBFmlZczOidTBEgkGVl12SYvoXY7tAf8UjvjDBC94wwjM+Mcf61ou+keMJi1BnOIY6xypmjM2wiA88YBb6MbpVApf4wfuF1q8SmF2tUcoE3kTtgY0CPQl7e7Sch/+LQ9CTcG7n/OP/xwnU6htaQM4CjwAAAABJRU5ErkJggg=="/><a href="https://fr.linkedin.com/in/lduboeuf">LinkedIn</a></li>
+            <li>
+                <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAyhJREFUOI2NlE1oXFUUx3/nzEzSduYlJgglkabUvJlI0YpO5gU1ULpxHdQYFyJasGuNuKjiQhAU/IJSjbhwIV21JhFxpYibViQzLiwSSSZkY0uRNk3beYmZdOYcF+kkk2lDeheXe8/H7/zvuZcr3GuEYXsg3WMIIw55MXoAXLkiUAKbrtiNcywsVFtTpdWQzg69pG6fGr5HVSdxzptwCUDdD+AybGLPq7BqyPjKfPHsPUUBGuSiiSAXrWWyhXd7evL7dgrcf+RIOpMrvBeEUTUIC6cBvSsoyEUT6TC61pHNRzuB7srpLzyVzg5evwPdfswgF60F2aEhgEwu/yCMJnYkHT2a3IiBYGDw6SCM1jMD0SiAEIbtAV2LLkzE5eIHAOlc4Xc16RPxDw3WRDgE4LAozj7E38F0obIwMwwQZAvvI368klztTwbSPWbY3sze9c/jhgKTLpQeR04135o0T8LVhr1NU5+s+fobHfX0qCKMKEz9e/HiCkDnY8Ndqta5awPdu7vDqANgae63irj+4MaIOuTxxIVNcdXqa6D7dwWq9NaEV5os5819UMXoEfzyVmXp3xXWKI6HjbUg/yjae+f9iLPlWb5fICLXtzYuAOrKFVPv26wq/HLfQOqbsS7eZ9hlFSg5DDccK3Mzv7pzZjeUuX8Tz/9xYcsiwypakiA3+LKhp/dI8sB/VntYxZ6J50tfZQai56TOCyb2rIp2AZixpOo/u3M2LhenG6jOg48/UEu1X0oIr2vFbpxTLF632tur5Zk/QQ4F2Wg8npv5LrNSP46T3BShJCu2/GozDMDaUidFWbqViicFIJ0rvKgmZ1zrx1I1/qqpzoJfc5FOETnYnKxu/TfLpcXGPj0QHdO6/eTCWFwuTSnAxhfkXzuJH28nedQs+YQjE4J829o7t6Q2w3D73lW/jMulKdj+H2oQFk6BnED4qE2TH1e9+pCQ+LsZKHXNJvz21VoicRK3t1zki7hcHAesFQhAZiAaFbfPDDoEWRDkye0KKTr2iKgu4/ZmQ9lmwVYgAIcPt3XU06NujJj7oKK9ABvvTEsC07dS8SSzs+utqf8D8eZDjhGvbocAAAAASUVORK5CYII="
+                />
+                <a href="https://github.com/lduboeuf">GitHub</a>
+            </li>
+            <li>
+                <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAQpJREFUOI3l07FKA0EUheEvWcFaMb1VsNBKUIiNpZ29vb6EhW9glU5SiWgt2Aq2ItjY2FgoBlTUQgImEGOxq4zL7mbXTjxwYYZ75p8zDJd/p6iifwKrWEIfL0GvjlFo3kCtANbEdXJohA+0sYX95LIf6iWNyQxYDVcBLKw3bGMhfaCfGC6xnAIu5sC+ai/rdScp0yk2MYe1AthNxotEWEd3TJKsusgCwjOGvwAehpB6sG6n9mV1lteIsItBhXTvaOQlHOIRdxXSdfBUZJjFfcl0XUyVuXUGO0nSPFgPrTKwmnhOjwpgD1gZB2riAK8FoIF4Iho5jO9EoVriqZjHtPgXb3GOY/Gn/XF9Aj7kgfGqD5bgAAAAAElFTkSuQmCC"
+                />
+                <a href="https://twitter.com/LDuboeuf">Twitter</a>
+            </li>
+            <li>
+                <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAALRJREFUOI3t0a1uAkEUxfEfnwmsaSUOvaoBQVJLwmP0GXgA+mJ9gGJw4CpaWd1AQHRZBCMImU3Y7tbxN3PvmTlnJne4c6c22ujVGbbBFmlZczOidTBEgkGVl12SYvoXY7tAf8UjvjDBC94wwjM+Mcf61ou+keMJi1BnOIY6xypmjM2wiA88YBb6MbpVApf4wfuF1q8SmF2tUcoE3kTtgY0CPQl7e7Sch/+LQ9CTcG7n/OP/xwnU6htaQM4CjwAAAABJRU5ErkJggg=="
+                />
+                <a href="https://fr.linkedin.com/in/lduboeuf">LinkedIn</a>
+            </li>
         </ul>
-        <p class="presentation">En tant que développeur et formateur, j'aime expérimenter, créer, apprendre, résoudre des problèmes. Curieux de nature, autodidacte tout en privilégiant le contact, j'aime les défis techniques. </p>
-        
+        <p class="presentation">En tant que développeur et formateur, j'aime expérimenter, créer, apprendre, résoudre des problèmes. Curieux de nature,
+            autodidacte tout en privilégiant le contact, j'aime les défis techniques. </p>
+
     </header>
     <div id="competences">
-            <h2>Compétences</h2>
-                <ul>
-                    <li>
-                        <span class="i_code_page"></span>
-                        <h3>Développement</h3>
-                    </li>
-                    <li>
-                        <span class="i_teaching"></span>
-                        <h3>Formation</h3>
-                    </li>
-                    <li>
-                        <span class="i_server"></span>
-                        <h3>Administration système</h3>
-                    </li>
-                    <li>
-                        <span class="i_group"></span>
-                        <h3>Gestion de projet</h3>
-                    </li>
-                </ul>
-            </div>
-            <div class="toggle">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label> 
-            </div>
+        <h2>Compétences</h2>
+        <ul>
+            <li>
+                <span class="i_code_page"></span>
+                <h3>Développement</h3>
+            </li>
+            <li>
+                <span class="i_teaching"></span>
+                <h3>Formation</h3>
+            </li>
+            <li>
+                <span class="i_server"></span>
+                <h3>Administration système</h3>
+            </li>
+            <li>
+                <span class="i_group"></span>
+                <h3>Gestion de projet</h3>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <main class="container">
-       
-           
+
+
         <section id="experiences">
 
-            <h2><span class="i_working_desk"></span>        
+            <h2>
+                <span class="i_working_desk"></span>
                 Expériences</h2>
             <div class="row">
 
@@ -250,11 +279,11 @@
                     </div>
                     <div class="description">
                         <ul>
-                                {{~expe.tasks :task:idx}}
-                                <li>{{=task}}</li>
-                                {{~}}
+                            {{~expe.tasks :task:idx}}
+                            <li>{{=task}}</li>
+                            {{~}}
                         </ul>
-                       
+
                     </div>
 
                 </article>
@@ -262,8 +291,9 @@
             </div>
         </section>
         <section id="formations">
-                
-            <h2><span class="i_graduate"></span>  Formations</h2>
+
+            <h2>
+                <span class="i_graduate"></span> Formations</h2>
             <div class="row">
 
                 {{~it.formations :expe:index}}
@@ -272,15 +302,39 @@
                     <h3>{{=expe.place}} -
                         <span class="date">{{=expe.date}}</span>
                     </h3>
-                   
+
                     <div class="description">{{=expe.description}}</div>
 
                 </article>
                 {{~}}
             </div>
         </section>
+        <section id="aside">
+
+            <h2>
+                <span class="i_me"></span> En plus</h2>
+            <div class="row">
+
+                {{~it.aside :expe:index}}
+                <article>
+                    <h2>{{=expe.title}}</h2>
+                    <h3>{{=expe.place}} -
+                        <span class="date">{{=expe.date}}</span>
+                    </h3>
+
+                    <div class="description">{{=expe.description}}</div>
+
+                </article>
+                {{~}}
+            </div>
+        </section>
+
     </main>
-    <footer>Lionel Duboeuf - Breizh Izel - 2017 - <a href="cv.pdf"> télécharger le CV</a><div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div></footer>
+    <footer>Lionel Duboeuf - Breizh Izel - 2017 -
+        <a href="cv.pdf"> télécharger le CV</a>
+        <div>Icon made from
+            <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+    </footer>
     <script>
         var $content = document.querySelector(".container");
         var $toggleSwitchBtn = document.querySelector('.switch input');
@@ -310,11 +364,11 @@
         }
 
 
-        function toggleSwitch(){
+        function toggleSwitch() {
             $content.innerHTML = null;
-            if (!$toggleSwitchBtn.checked){
+            if (!$toggleSwitchBtn.checked) {
                 $content.innerHTML = templ(datas);
-            }else{
+            } else {
                 var str = JSON.stringify(datas, undefined, 4);
                 $content.appendChild(document.createElement('pre')).innerHTML = syntaxHighlight(str);
             }
@@ -322,10 +376,10 @@
 
 
         $toggleSwitchBtn.onclick = toggleSwitch;
-        
+
         toggleSwitch();
-        
-        
+
+
 
 
     </script>

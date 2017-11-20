@@ -51,3 +51,7 @@
 	content: "\e015";
 	color: #859973;
 }
+.i_me:before {
+	content: "\e016";
+	color: #859973;
+}

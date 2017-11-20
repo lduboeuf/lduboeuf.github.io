@@ -3,6 +3,27 @@ body {
     margin: 0;
 }
 
+@media print{
+
+    @page{
+        margin:0;
+    }
+    .links, footer, .toggle{
+        display: none;
+    }
+
+    article>*, section>* {
+        margin: 0.5em !important;
+        padding: 0 !important;
+    }
+
+    .competences{
+        margin-top:2em !important;
+        padding:0 !important;
+        height: 60px !important;
+    }
+}
+
 body>header {
     background-image: url(../img/background.jpeg);
     color: #fff;
