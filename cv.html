@@ -21,8 +21,8 @@
                     place: "AFPA Morlaix",
                     date: "02/2015 -> 01/2018",
                     tasks: [
-                        "Suivi formation adulte Développeur Logiciel ( web, client-riche, bdd )",
-                        "Conception et suivi d'une formation de 2 mois ( NodeJs, PHP, AngularJs) "
+                        "Suivi formation adulte Développeur Logiciel - Niveau III ( web, client-riche, bdd )",
+                        "Conception et suivi d'une formation de 2 mois ( NodeJs, PHP, AngularJs, MongoDB) "
                     ],
                     skills: {
                         "coaching": 30,
@@ -35,7 +35,7 @@
                     place: "MarvinBot SAS - Brest",
                     date: "06/2013 -> 02/2015",
                     tasks: [
-                        "Développement d'un prototype sur la technologie d'IA marvinbot.com ( JEE, nginx/lua, java helpers, javascript)",
+                        "Développement d'API Rest et d'un prototype sur la technologie d'IA marvinbot.com ( JEE, nginx/lua, java helpers, javascript)",
                         "Mise en place de l'infrastructure ( google cloud )"
                     ],
                     skills: {
@@ -275,11 +275,6 @@
                     <h3>{{=expe.place}} -
                         <span class="date">{{=expe.date}}</span>
                     </h3>
-                    <div class="competences">
-                        {{ for(var skill in expe.skills) { }}
-                        <div>{{=skill}} : {{=expe.skills[skill]}}%</div>
-                        {{ } }}
-                    </div>
                     <div class="description">
                         <ul>
                             {{~expe.tasks :task:idx}}
@@ -288,6 +283,12 @@
                         </ul>
 
                     </div>
+                    <div class="competences">
+                        {{ for(var skill in expe.skills) { }}
+                        <div>{{=skill}} : {{=expe.skills[skill]}}%</div>
+                        {{ } }}
+                    </div>
+                    
 
                 </article>
                 {{~}}
@@ -335,7 +336,7 @@
     </main>
     <footer>Lionel Duboeuf - Breizh Izel - 2017 -
         <a href="cv.pdf"> télécharger le CV</a>
-        <div>Icon made from
+        <div class="copyrights">Icon made from
             <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
     </footer>
     <script>
@@ -375,6 +376,12 @@
                 var str = JSON.stringify(datas, undefined, 4);
                 $content.appendChild(document.createElement('pre')).innerHTML = syntaxHighlight(str);
             }
+        }
+
+        function toggleDetail(source){
+            var $li = source.parentElement;
+            var $detail = $li.querySelector('.detail');
+            $detail.classList.toggle('display');
         }
 
 
