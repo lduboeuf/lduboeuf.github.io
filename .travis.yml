@@ -3,9 +3,6 @@ install:
 - npm install --dev
 script:
 - npm run build
-branches:
-  only:
-- master
 deploy:
   provider: pages
   skip-cleanup: true
