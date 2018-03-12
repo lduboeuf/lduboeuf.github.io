@@ -1,0 +1,23 @@
+{
+  "name": "lduboeuf.github.io",
+  "version": "1.0.0",
+  "description": "about me",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "dot": "^1.1.2"
+  },
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lduboeuf/lduboeuf.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lduboeuf/lduboeuf.github.io/issues"
+  },
+  "homepage": "https://github.com/lduboeuf/lduboeuf.github.io#readme"
+}

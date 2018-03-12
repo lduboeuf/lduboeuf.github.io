@@ -1,0 +1,184 @@
+{
+    "experiences": [
+        {
+            "title": "Formateur",
+            "place": "AFPA Morlaix",
+            "date": "02/2015 -> 01/2018",
+            "tasks": [
+                "Suivi formation adulte Développeur Logiciel - Niveau III ( web, client-riche, bdd )",
+                "Conception et suivi d'une formation de 2 mois ( NodeJs, PHP, AngularJs, MongoDB) "
+            ],
+            "skills": {
+                "coaching": 30,
+                "enseignement": 30,
+                "développement": 30
+            }
+        },
+        {
+            "title": "Consultant",
+            "place": "MarvinBot SAS - Brest",
+            "date": "06/2013 -> 02/2015",
+            "tasks": [
+                "Développement d'API Rest et d'un prototype sur la technologie d'IA marvinbot.com ( JEE, nginx/lua, java helpers, javascript)",
+                "Mise en place de l'infrastructure ( google cloud )"
+            ],
+            "skills": {
+                "développement": 60,
+                "administration système": 30,
+                "veille techno. - auto formation": 10
+            }
+        },
+        {
+            "title": "Formateur",
+            "place": "AFPA St Brieuc",
+            "date": "03/2012 -> 06/2013",
+            "tasks": [
+                "Formateur d'adultes niveau II (Bac+3) : module JEE",
+                "Formateur d'adultes niveau III (Bac+2) Développeur Logiciel ( web, client-riche, bdd )"
+            ],
+            "skills": {
+                "coaching": 30,
+                "enseignement": 30,
+                "développement": 30
+            }
+        },
+        {
+            "title": "Ingénieur Développeur",
+            "place": "Boozter SAS",
+            "date": "06/2007 -> 10/2011",
+            "tasks": [
+                "Conception et Développement du framework boozter ( J2EE - GWT - Android)",
+                "Conduite des projets"
+            ],
+            "skills": {
+                "développement": 60,
+                "administration système": 20,
+                "gestion de projet": 20
+            }
+        },
+        {
+            "title": "Développeur - Admin. système",
+            "place": "Université Bretagne Sud",
+            "date": "11/2004 -> 06/2006",
+            "tasks": [
+                "Développement logiciels internes PHP/Mysql",
+                "Administration de la plate forme web ( Tomcat, Moodle, scripting bash)"
+            ],
+            "skills": {
+                "développement": 60,
+                "administration système": 40
+            }
+        },
+        {
+            "title": "Développeur",
+            "place": "Chambre d'Agriculture du Morbihan",
+            "date": "06/2003 -> 11/2004",
+            "tasks": [
+                "Développement d'outils multimédia d'auto-formation( Flash, Director )",
+                "Développement d'applications métier: ( php/mysql, vba )"
+            ],
+            "skills": {
+                "développement": 60,
+                "intégration": 40
+            }
+        },
+        {
+            "title": "Développeur - Admin. réseau",
+            "place": "Chambre d'Agriculture de l'Aveyron",
+            "date": "06/2000 -> 06/2003",
+            "tasks": [
+                "Développement logiciels de gestion ( php/mysql, vba )",
+                "Mise en place infrastructure système et réseau ",
+                "Support et formation"
+            ],
+            "skills": {
+                "développement": 60,
+                "administration": 25,
+                "support et formation": 15
+            }
+        },
+        {
+            "title": "Administrateur réseau",
+            "place": "Lycée Horticole de Dardilly",
+            "date": "06/1999 -> 06/2000",
+            "tasks": [
+                "Gestion du parc informatique, administration",
+                "Développement interne ( asp )",
+                "Support et formation interne"
+            ],
+            "skills": {
+                "développement": 20,
+                "administration": 65,
+                "support et formation": 15
+            }
+        },
+        {
+            "title": "Opérateur HF - Service national",
+            "place": "Handicap international",
+            "date": "11/1997 -> 01/1999",
+            "tasks": [
+                "Opérateur radio communication internationale",
+                "Support utilisateur bureautique"
+            ],
+            "skills": {
+                "support": 60,
+                "opérateur": 40
+            }
+        }
+    ],
+    "formations": [
+        {
+            "title": "Responsable de Projet en Système d'information",
+            "place": "AFPA de St Brieuc",
+            "date": "2007",
+            "description": "Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
+        },
+        {
+            "title": "DUT Génie des Télécommunications et Réseaux",
+            "place": "IUT de Belfort-Montbéliard",
+            "date": "1997",
+            "description": "Stage: Administration PABX - Matra Communication"
+        },
+        {
+            "title": "Bac Professionnel MRBT",
+            "place": "Lycée Saint Benigne - Pontarlier",
+            "date": "1995",
+            "description": "Stage: Maintenance bureautique, informatique, réseaux informatique"
+        },
+        {
+            "title": "BEP Electronique",
+            "place": "Lycée Saint Joseph - Dijon",
+            "date": "1993",
+            "description": ""
+        },
+        {
+            "title": "Formation aux Design Pattern",
+            "place": "Orsys - Paris",
+            "date": "2009",
+            "description": ""
+        },
+        {
+            "title": "Formation à la méthode agile - Scrum",
+            "place": "Claude Aubry - Toulouse",
+            "date": "2015",
+            "description": ""
+        }
+    ],
+    "aside": [
+        {
+            "title": "Professeur de Yoga",
+            "place": "Tredion - Morbihan",
+            "date": "2003 -> 2007",
+            "description": "Mise en place et suivi d'un cours hebdomadaire"
+
+        },
+        {
+            "title": "Intérêts",
+            "place": "",
+            "date": "",
+            "description": "Musique, Randonnées, Aikido, bricolage, Voyages, Open source"
+
+        }
+    ]
+
+}
