@@ -5,8 +5,8 @@
             "place": "AFPA Morlaix",
             "date": "02/2015 -> 01/2018",
             "tasks": [
-                "Suivi formation adulte Développeur Logiciel - Niveau III ( web, client-riche, bdd )",
-                "Conception et suivi d'une formation de 2 mois ( NodeJs, PHP, AngularJs, MongoDB) "
+                "Encadrement formation adulte Développeur Logiciel - Niveau III -( Bac +2)",
+                "Conception et coaching d'une formation de 2 mois en mode projet ( NodeJs, PHP, AngularJs, MongoDB) "
             ],
             "skills": {
                 "coaching": 30,
@@ -15,11 +15,11 @@
             }
         },
         {
-            "title": "Consultant",
+            "title": "Développeur Full Stack",
             "place": "MarvinBot SAS - Brest",
             "date": "06/2013 -> 02/2015",
             "tasks": [
-                "Développement d'API Rest et d'un prototype sur la technologie d'IA marvinbot.com ( JEE, nginx/lua, java helpers, javascript)",
+                "Développement d'API Rest et d'un prototype sur la technologie d'IA marvinbot.com ( JEE, Openresty, java helpers, javascript)",
                 "Mise en place de l'infrastructure ( google cloud )"
             ],
             "skills": {
@@ -48,7 +48,9 @@
             "date": "06/2007 -> 10/2011",
             "tasks": [
                 "Conception et Développement du framework boozter ( J2EE - GWT - Android)",
-                "Conduite des projets"
+                "Conduite des projets",
+                "Maintenance des outils de production ( svn, maven, backup, Tomcat, Apache, PostgreSQL )"
+
             ],
             "skills": {
                 "développement": 60,
@@ -129,9 +131,9 @@
     "formations": [
         {
             "title": "Responsable de Projet en Système d'information",
-            "place": "AFPA de St Brieuc",
+            "place": "AFPA de St Brieuc - Titre professionnel de niveau II (Bac +4)",
             "date": "2007",
-            "description": "Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
+            "description": " Conduite de Projet <br> Conception et développement Objet <br> Bases de données. <br> Stage: Conception et développement d'un logiciel de classement automatique d'email ( J2EE - GWT ) - Boozter SAS"
         },
         {
             "title": "DUT Génie des Télécommunications et Réseaux",
