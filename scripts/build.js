@@ -3,7 +3,6 @@ var fs = require('fs'),
     dot = require('dot');
 var cvPath = path.join(process.cwd(), 'cv');
 
-var tmplFilepath = path.join(cvPath, 'cv-template-expe.html');
 var dataFilePath = path.join(cvPath, 'data-expe.json');
 var sourceHTMLPath = path.join(cvPath, 'cv-tpl.html');
 var outputHtmlPath = path.join(cvPath, 'cv.html');
