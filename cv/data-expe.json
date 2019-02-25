@@ -1,6 +1,17 @@
 {
     "experiences": [
         {
+            "title": "Développeur - Concepteur Android",
+            "place": "Kristal",
+            "date": "06/2018 -> 02/2019",
+            "tasks": [
+                "Conception est développement d'applications de Télégestion"
+            ],
+            "skills": {
+                "développement": 100
+            }
+        },
+        {
             "title": "Formateur",
             "place": "AFPA Morlaix",
             "date": "02/2015 -> 01/2018",
@@ -140,18 +151,6 @@
             "place": "IUT de Belfort-Montbéliard",
             "date": "1997",
             "description": "Stage: Administration PABX - Matra Communication"
-        },
-        {
-            "title": "Bac Professionnel MRBT",
-            "place": "Lycée Saint Benigne - Pontarlier",
-            "date": "1995",
-            "description": "Stage: Maintenance bureautique, informatique, réseaux informatique"
-        },
-        {
-            "title": "BEP Electronique",
-            "place": "Lycée Saint Joseph - Dijon",
-            "date": "1993",
-            "description": ""
         },
         {
             "title": "Formation aux Design Pattern",
